@@ -24,7 +24,7 @@ function App() {
       <Calculadora altura={altura} setAltura={setAltura} peso={peso} setPeso={setPeso} handleBtn={handleBtn} />
       <div className='container__resultado'>
       {imc !== null && <p>O seu IMC é: {imc.toFixed(2)}</p>}
-      {imc !== null && <Tabela />}
+      {imc !== null && <Tabela imc={imc} />}
       </div>
 </div>
   );
